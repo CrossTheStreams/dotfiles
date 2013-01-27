@@ -1,0 +1,8 @@
+# ignore everything
+*
+
+# Except dotfiles :P
+!.gitignore
+!.bash_profile
+!.vimrc
+
