@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ignore everything
 *
 
@@ -6,3 +7,9 @@
 !.bash_profile
 !.vimrc
 
+=======
+.*.sw?
+.DS_Store
+.rbenv-version
+.idea
+>>>>>>> 5146f3ef27f9a51171cf87d46a1a40677eac373f
