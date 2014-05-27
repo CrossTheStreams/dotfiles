@@ -42,3 +42,6 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 YELLOW="\[\e[1;33m\]"
 RED="\[\e[1;31m\]"
 PS1="$RED[\h:\W] $YELLOW\$(parse_git_branch)% \[\e[0m\]"
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"

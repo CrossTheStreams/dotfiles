@@ -13,7 +13,7 @@ set scroll=10
 
 set backspace=2 "
 
-colorscheme ir_black
+colorscheme railscasts
 
 set expandtab
 set shiftwidth=2
