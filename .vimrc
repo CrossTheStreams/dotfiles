@@ -22,11 +22,6 @@ set softtabstop=2
 "let g:gist_use_password_in_gitconfig = 1
 "let g:gist_post_private = 1
 
-"nmap <F1> :set paste<CR>:r !pbpaste<CR>:set nopaste<CR>
-"imap <F1> <Esc>:set paste<CR>:r !pbpaste<CR>:set nopaste<CR>
-"nmap <F2> :.w !pbcopy<CR><CR>
-"vmap <F2> :w !pbcopy<CR><CR>
-
 " old tslime.vim settings
 "vmap <C-c><C-c> <Plug>SendSelectionToTmux
 "nmap <C-c><C-c> <Plug>NormalModeSendToTmux
@@ -36,6 +31,14 @@ map <Leader>vx :VimuxClosePanes<CR>
 map <Leader>vp :VimuxPromptCommand<CR>
 "vmap <LocalLeader>vs "vy :call VimuxRunCommand(@v . "\n", 0)<CR>
 "nmap <LocalLeader>vs vip<LocalLeader>vs<CR>
+
+" \c to toggle vertical and horizontal cursor lines
+:hi CursorLine   cterm=NONE ctermbg=darkyellow ctermfg=white guibg=darkyellow guifg=white
+:hi CursorColumn cterm=NONE ctermbg=darkyellow ctermfg=white guibg=darkyellow guifg=white
+:nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
+
+" \n To toggle line numbers
+:nnoremap <Leader>n :set number!<CR>
 
 vmap <C-c><C-c> "vy :call VimuxRunCommand(@v . "", 0)<CR>
 let g:VimuxOrientation = "h"
@@ -59,9 +62,6 @@ autocmd BufRead *_spec.rb syn keyword rubyRspec describe context it specify it_s
 
 highlight def link rubyRspec Function
 
-vmap <leader>c <esc>:'<,'>:CoffeeCompile<CR>
-map <leader>c :CoffeeCompile<CR>
-
 nnoremap <gt> :tabprevious<CR>
 nnoremap <gt> :tabnext<CR>
 
@@ -73,3 +73,4 @@ nnoremap <right> :vertical resize +1<cr>
 " ctrp exclusions
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip 
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+
