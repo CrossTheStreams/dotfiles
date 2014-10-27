@@ -16,11 +16,6 @@ export PATH=/usr/local/go/bin:$PATH
 export EB_HOME="/Applications/AWS-ElasticBeanstalk-CLI-2.6.0/eb/macosx/python2.7"
 export PATH=$EB_HOME:$PATH
 
-# s3 config for teamshifter
-S3_KEY="AKIAIR6RXFL2YRRAQ5MA"
-S3_SECRET="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"
-S3_BUCKET="http://teamshifter.s3.amazonaws.com/"
-
 #export NODE_PATH=/usr/local/node_modules
 alias tmux="TERM=screen-256color-bce tmux"
 alias vim=" /usr/local/Cellar/vim/7.4.253/bin/vim"
